@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: muminov-portfolio
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=3600, immutable
+    envVars:
+      - key: NODE_VERSION
+        value: 18
