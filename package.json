@@ -1,0 +1,26 @@
+{
+  "name": "muminov-portfolio",
+  "version": "1.0.0",
+  "description": "Muhammadsolixon Muminov — Elite Creative Developer & Designer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -s -l $PORT",
+    "build": "echo 'Build complete - static site'",
+    "dev": "npx serve . -s -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "designer",
+    "telegram-bot",
+    "creative"
+  ],
+  "author": "Muhammadsolixon Muminov",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
